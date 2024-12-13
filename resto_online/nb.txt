@@ -1,0 +1,2 @@
+menggunakan database mysql(xampp)
+untuk memeriksa data setelah mengklik pesan pada menu yang dipilih, bisa panggil http://localhost/resto_online/admin.php
