@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Restoran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Menu Restoran</h1>
+
+    <div class="menu-item">
+        <h2>Rendang</h2>
+        <p>Harga: Rp 55.000</p>
+        <form action="order.php" method="POST">
+            <input type="text" name="customer_name" placeholder="Nama Pelanggan" required>
+            <input type="number" name="no_meja" placeholder="No Meja" required>
+            <input type="hidden" name="menu_id" value="1"> <!-- ID menu Rendang -->
+            <input type="number" name="quantity" placeholder="Jumlah" required>
+            <button type="submit" name="order" value="Rendang" class="order-btn">Pesan</button>
+        </form>
+    </div>
+
+    <div class="menu-item">
+        <h2>Sate Ayam</h2>
+        <p>Harga: Rp 35.000</p>
+        <form action="order.php" method="POST">
+            <input type="text" name="customer_name" placeholder="Nama Pelanggan" required>
+            <input type="number" name="no_meja" placeholder="No Meja" required>
+            <input type="hidden" name="menu_id" value="2"> <!-- ID menu Sate Ayam -->
+            <input type="number" name="quantity" placeholder="Jumlah" required>
+            <button type="submit" name="order" value="Sate Ayam" class="order-btn">Pesan</button>
+        </form>
+    </div>
+
+    <div class="menu-item">
+        <h2>Ayam Bakar</h2>
+        <p>Harga: Rp 40.000</p>
+        <form action="order.php" method="POST">
+            <input type="text" name="customer_name" placeholder="Nama Pelanggan" required>
+            <input type="number" name="no_meja" placeholder="No Meja" required>
+            <input type="hidden" name="menu_id" value="3"> <!-- ID menu Ayam Bakar -->
+            <input type="number" name="quantity" placeholder="Jumlah" required>
+            <button type="submit" name="order" value="Ayam Bakar" class="order-btn">Pesan</button>
+        </form>
+    </div>
+
+    <div class="menu-item">
+        <h2>Sop Buntut</h2>
+        <p>Harga: Rp 70.000</p>
+        <form action="order.php" method="POST">
+            <input type="text" name="customer_name" placeholder="Nama Pelanggan" required>
+            <input type="number" name="no_meja" placeholder="No Meja" required>
+            <input type="hidden" name="menu_id" value="4"> <!-- ID menu Sop Buntut -->
+            <input type="number" name="quantity" placeholder="Jumlah" required>
+            <button type="submit" name="order" value="Sop Buntut" class="order-btn">Pesan</button>
+        </form>
+    </div>
+
+    <div class="menu-item">
+        <h2>Pasta</h2>
+        <p>Harga: Rp 40.000</p>
+        <form action="order.php" method="POST">
+            <input type="text" name="customer_name" placeholder="Nama Pelanggan" required>
+            <input type="number" name="no_meja" placeholder="No Meja" required>
+            <input type="hidden" name="menu_id" value="5"> <!-- ID menu Pasta -->
+            <input type="number" name="quantity" placeholder="Jumlah" required>
+            <button type="submit" name="order" value="Pasta" class="order-btn">Pesan</button>
+        </form>
+    </div>
+
+    <div class="menu-item">
+        <h2>Burger</h2>
+        <p>Harga: Rp 55.000</p>
+        <form action="order.php" method="POST">
+            <input type="text" name="customer_name" placeholder="Nama Pelanggan" required>
+            <input type="number" name="no_meja" placeholder="No Meja" required>
+            <input type="hidden" name="menu_id" value="6"> <!-- ID menu Burger -->
+            <input type="number" name="quantity" placeholder="Jumlah" required>
+            <button type="submit" name="order" value="Burger" class="order-btn">Pesan</button>
+        </form>
+    </div>
+
+    <div class="menu-item">
+        <h2>Pizza</h2>
+        <p>Harga: Rp 90.000</p>
+        <form action="order.php" method="POST">
+            <input type="text" name="customer_name" placeholder="Nama Pelanggan" required>
+            <input type="number" name="no_meja" placeholder="No Meja" required>
+            <input type="hidden" name="menu_id" value="7"> <!-- ID menu Pizza -->
+            <input type="number" name="quantity" placeholder="Jumlah" required>
+            <button type="submit" name="order" value="Pizza" class="order-btn">Pesan</button>
+        </form>
+    </div>
+
+    <div class="menu-item">
+        <h2>Cappuccino</h2>
+        <p>Harga: Rp 15.000</p>
+        <form action="order.php" method="POST">
+            <input type="text" name="customer_name" placeholder="Nama Pelanggan" required>
+            <input type="number" name="no_meja" placeholder="No Meja" required>
+            <input type="hidden" name="menu_id" value="8"> <!-- ID menu Cappuccino -->
+            <input type="number" name="quantity" placeholder="Jumlah" required>
+            <button type="submit" name="order" value="Cappuccino" class="order-btn">Pesan</button>
+        </form>
+    </div>
+
+    <div class="menu-item">
+        <h2>Es Teh Manis</h2>
+        <p>Harga: Rp 15.000</p>
+        <form action="order.php" method="POST">
+            <input type="text" name="customer_name" placeholder="Nama Pelanggan" required>
+            <input type="number" name="no_meja" placeholder="No Meja" required>
+            <input type="hidden" name="menu_id" value="9"> <!-- ID menu Es Teh Manis -->
+            <input type="number" name="quantity" placeholder="Jumlah" required>
+            <button type="submit" name="order" value="Es Teh Manis" class="order-btn">Pesan</button>
+        </form>
+    </div>
+
+    <div class="menu-item">
+        <h2>Smoothie Berry</h2>
+        <p>Harga: Rp 35.000</p>
+        <form action="order.php" method="POST">
+            <input type="text" name="customer_name" placeholder="Nama Pelanggan" required>
+            <input type="number" name="no_meja" placeholder="No Meja" required>
+            <input type="hidden" name="menu_id" value="10"> <!-- ID menu Smoothie Berry -->
+            <input type="number" name="quantity" placeholder="Jumlah" required>
+            <button type="submit" name="order" value="Smoothie Berry" class="order-btn">Pesan</button>
+        </form>
+    </div>
+
+    <div class="menu-item">
+        <h2>Soda Gembira</h2>
+        <p>Harga: Rp 20.000</p>
+        <form action="order.php" method="POST">
+            <input type="text" name="customer_name" placeholder="Nama Pelanggan" required>
+            <input type="number" name="no_meja" placeholder="No Meja" required>
+            <input type="hidden" name="menu_id" value="11"> <!-- ID menu Soda Gembira -->
+            <input type="number" name="quantity" placeholder="Jumlah" required>
+            <button type="submit" name="order" value="Soda Gembira" class="order-btn">Pesan</button>
+        </form>
+    </div>
+
+    <div class="menu-item">
+        <h2>Mineral</h2>
+        <p>Harga: Rp 20.000</p>
+        <form action="order.php" method="POST">
+            <input type="text" name="customer_name" placeholder="Nama Pelanggan" required>
+            <input type="number" name="no_meja" placeholder="No Meja" required>
+            <input type="hidden" name="menu_id" value="12"> <!-- ID menu Mineral -->
+            <input type="number" name="quantity" placeholder="Jumlah" required>
+            <button type="submit" name="order" value="Mineral" class="order-btn">Pesan</button>
+        </form>
+    </div>
+
+    <div class="menu-item">
+        <h2>Jus Mangga</h2>
+        <p>Harga: Rp 25.000</p>
+        <form action="order.php" method="POST">
+            <input type="text" name="customer_name" placeholder="Nama Pelanggan" required>
+            <input type="number" name="no_meja" placeholder="No Meja" required>
+            <input type="hidden" name="menu_id" value="13"> <!-- ID menu Jus Mangga -->
+            <input type="number" name="quantity" placeholder="Jumlah" required>
+            <button type="submit" name="order" value="Jus Mangga" class="order-btn">Pesan</button>
+        </form>
+    </div>
+
+    <div class="menu-item">
+        <h2>Kentang Goreng</h2>
+        <p>Harga: Rp 20.000</p>
+        <form action="order.php" method="POST">
+            <input type="text" name="customer_name" placeholder="Nama Pelanggan" required>
+            <input type="number" name="no_meja" placeholder="No Meja" required>
+            <input type="hidden" name="menu_id" value="14"> <!-- ID menu Kentang Goreng -->
+            <input type="number" name="quantity" placeholder="Jumlah" required>
+            <button type="submit" name="order" value="Kentang Goreng" class="order-btn">Pesan</button>
+        </form>
+    </div>
+
+    <div class="menu-item">
+        <h2>Jamur Krispi</h2>
+        <p>Harga: Rp 20.000</p>
+        <form action="order.php" method="POST">
+            <input type="text" name="customer_name" placeholder="Nama Pelanggan" required>
+            <input type="number" name="no_meja" placeholder="No Meja" required>
+            <input type="hidden" name="menu_id" value="15"> <!-- ID menu Jamur Krispi -->
+            <input type="number" name="quantity" placeholder="Jumlah" required>
+            <button type="submit" name="order" value="Jamur Krispi" class="order-btn">Pesan</button>
+        </form>
+    </div>
+
+    <div class="menu-item">
+        <h2>Pisang Goreng</h2>
+        <p>Harga: Rp 20.000</p>
+        <form action="order.php" method="POST">
+            <input type="text" name="customer_name" placeholder="Nama Pelanggan" required>
+            <input type="number" name="no_meja" placeholder="No Meja" required>
+            <input type="hidden" name="menu_id" value="16"> <!-- ID menu Pisang Goreng -->
+            <input type="number" name="quantity" placeholder="Jumlah" required>
+            <button type="submit" name="order" value="Pisang Goreng" class="order-btn">Pesan</button>
+        </form>
+    </div>
+
+</body>
+</html>

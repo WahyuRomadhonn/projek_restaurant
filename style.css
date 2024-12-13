@@ -1,0 +1,179 @@
+/* Reset dan Set Default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #d3d3d3; /* Warna abu muda */
+    color: #333; /* Mengubah warna teks menjadi lebih gelap */
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Kategori Menu */
+.category {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.category ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Menu Items */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 kolom per baris */
+    gap: 20px;
+    padding: 0 10px;
+    margin-bottom: 50px;
+}
+
+.menu-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(138, 16, 16, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Efek hover untuk memperbesar item */
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 1.25rem;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 20px;  /* Menambahkan jarak agar lebih terpisah dari deskripsi */
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button.order-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button.order-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Tabel pada Admin */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;  /* Memberikan jarak atas dan bawah */
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f01818;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .menu-items {
+        grid-template-columns: repeat(2, 1fr);  /* 2 kolom per baris untuk perangkat lebih kecil */
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-items {
+        grid-template-columns: 1fr;  /* 1 kolom per baris untuk perangkat mobile */
+    }
+
+    .menu-item h3 {
+        font-size: 1rem;  /* Menurunkan ukuran font judul pada perangkat kecil */
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 2rem; /* Mengurangi ukuran header di layar kecil */
+    }
+
+    .category ul li {
+        font-size: 0.9rem;
+    }
+
+    .menu-item img {
+        height: 150px; /* Menyesuaikan ukuran gambar pada perangkat lebih kecil */
+    }
+}
